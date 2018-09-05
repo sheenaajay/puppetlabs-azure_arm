@@ -215,7 +215,7 @@ Puppet::Type.type(:azure_application).provide(:arm) do
 
     op_params = [
       self.op_param("api-version", "query", "api_version"),
-      self.op_param("applicationObjectId", "path", "objectid"),
+      self.op_param("applicationObjectId", "path", "object_id"),
       self.op_param("tenantID", "path", "tenant_id"),
     ]
     op_params.each do |i|
@@ -275,7 +275,7 @@ Puppet::Type.type(:azure_application).provide(:arm) do
 
     op_params = [
       self.op_param("api-version", "query", "api_version"),
-      self.op_param("applicationObjectId", "path", "objectid"),
+      self.op_param("applicationObjectId", "path", "object_id"),
       self.op_param("tenantID", "path", "tenant_id"),
     ]
     op_params.each do |i|
